@@ -1,0 +1,23 @@
+{
+  "name": "jwt-example",
+  "version": "0.0.1",
+  "description": "JWT example",
+  "private": true,
+  "scripts": {
+    "start": "node ./lib/main",
+    "eslint": "./node_modules/.bin/eslint .",
+    "mocha": "./node_modules/.bin/mocha lib",
+    "test": "npm run mocha; code=$?; npm run eslint; exit $((${code}+$?))"
+  },
+  "dependencies": {
+    "@arpinum/config": "1.0.0",
+    "express": "4.15.3",
+    "jsonwebtoken": "7.4.1"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "eslint": "3.17.1",
+    "eslint-config-arpinum": "3.0.4",
+    "mocha": "3.2.0"
+  }
+}
